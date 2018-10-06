@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_putendl.c                                     .::    .:/ .      .::   */
+/*   ft_lsnew.c                                       .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: mjalenqu <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/10/04 10:10:34 by mjalenqu     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/06 11:19:00 by mjalenqu    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/10/06 16:02:28 by mjalenqu     #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/06 16:19:12 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(const char *str, int fd)
+t_list	*ft_lsnew(void const centent, size_t content_size)
 {
-	int i;
-
-	i = 0;
-	if (str)
-	{
-		while (str[i])
-		{
-			write(fd, &str[i], 1);
-			i++;
-		}
-		ft_putchar_fd('\n', fd);
-	}
+	
 }

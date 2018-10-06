@@ -6,7 +6,7 @@
 /*   By: mjalenqu <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/03 08:12:52 by mjalenqu     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/05 19:02:06 by mjalenqu    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/06 16:19:08 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -70,4 +70,11 @@ void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+typedef	struct	s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}				t_list;
+t_list	*ft_lsnew(void const *content, size_t content_size);
 #endif

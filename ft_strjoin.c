@@ -6,7 +6,7 @@
 /*   By: mjalenqu <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/04 14:36:58 by mjalenqu     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/04 15:20:55 by mjalenqu    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/06 10:50:44 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -21,6 +21,8 @@ char	*ft_strjoin(char *s1, const char *s2)
 
 	i = 0;
 	j = 0;
+	if (!(s1 && s2))
+		return (NULL);
 	if ((str = malloc(sizeof(char*) * (ft_strlen(s1) + ft_strlen(s2)))) == NULL)
 		return (0);
 	while (s1[i])

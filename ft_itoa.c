@@ -6,14 +6,14 @@
 /*   By: mjalenqu <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/04 18:19:32 by mjalenqu     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/05 16:18:32 by mjalenqu    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/06 09:24:15 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*remplissage(char *str, int n, int j, int signe)
+static char	*remplissage(char *str, int n, int j, int signe)
 {
 	if (signe == 1)
 		str[0] = 45;
@@ -32,7 +32,7 @@ char	*remplissage(char *str, int n, int j, int signe)
 	return (str);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*str;
 	int		signe;

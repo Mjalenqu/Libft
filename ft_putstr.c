@@ -6,7 +6,7 @@
 /*   By: mjalenqu <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/04 10:10:34 by mjalenqu     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/04 10:17:07 by mjalenqu    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/06 11:18:07 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -18,9 +18,12 @@ void	ft_putstr(const char *str)
 	int i;
 
 	i = 0;
-	while (str[i])
+	if (str)
 	{
-		write(1, &str[i], 1);
-		i++;
+		while (str[i])
+		{
+			write(1, &str[i], 1);
+			i++;
+		}
 	}
 }
