@@ -6,7 +6,7 @@
 #    By: mjalenqu <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/10/02 11:39:17 by mjalenqu     #+#   ##    ##    #+#        #
-#    Updated: 2018/10/06 19:21:33 by mjalenqu    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/10/08 19:12:48 by mjalenqu    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -18,7 +18,7 @@ FLAG = -Wall -Werror -Wextra
 SRCO = $(SRC:.c=.o)
 all: $(NAME)
 
-$(NAME):
+$(NAME): $(SRCO)
 	gcc -c $(FLAG) $(SRC) -I $(HEADERS)
 	ar rc $(NAME) $(SRCO)
 
